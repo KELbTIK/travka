@@ -1,51 +1,59 @@
 @font-face {
-    font-family: 'almoni_dl_aaablack';
-    src: url('../fonts/almoni-dl-aaa-black-webfont.eot');
-    src: url('../fonts/almoni-dl-aaa-black-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/almoni-dl-aaa-black-webfont.woff2') format('woff2'),
-    url('../fonts/almoni-dl-aaa-black-webfont.woff') format('woff'),
-    url('../fonts/almoni-dl-aaa-black-webfont.ttf') format('truetype'),
-    url('../fonts/almoni-dl-aaa-black-webfont.svg#almoni_dl_aaablack') format('svg');
+    font-family: 'AlmoniDLAAA-Black';
+    src: url('../fonts/AlmoniDLAAA-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/AlmoniDLAAA-Black.otf')  format('opentype'),
+    url('../fonts/AlmoniDLAAA-Black.woff') format('woff'), url('../fonts/AlmoniDLAAA-Black.ttf')  format('truetype'), url('../fonts/AlmoniDLAAA-Black.svg#AlmoniDLAAA-Black') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'AlmoniDLAAA-Bold';
+    src: url('../fonts/AlmoniDLAAA-Bold.eot?#iefix') format('../fonts/embedded-opentype'),  url('../fonts/AlmoniDLAAA-Bold.otf')  format('opentype'),
+    url('../fonts/AlmoniDLAAA-Bold.woff') format('woff'), url('../fonts/AlmoniDLAAA-Bold.ttf')  format('truetype'), url('../fonts/AlmoniDLAAA-Bold.svg#AlmoniDLAAA-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlmoniDLAAA-Light';
+    src: url('../fonts/AlmoniDLAAA-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/AlmoniDLAAA-Light.otf')  format('opentype'),
+    url('../fonts/AlmoniDLAAA-Light.woff') format('woff'), url('../fonts/AlmoniDLAAA-Light.ttf')  format('truetype'), url('../fonts/AlmoniDLAAA-Light.svg#AlmoniDLAAA-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'AlmoniDLAAA';
+    src: url('../fonts/AlmoniDLAAA.eot?#iefix') format('embedded-opentype'),  url('../fonts/AlmoniDLAAA.otf')  format('opentype'),
+    url('../fonts/AlmoniDLAAA.woff') format('woff'), url('../fonts/AlmoniDLAAA.ttf')  format('truetype'), url('../fonts/AlmoniDLAAA.svg#AlmoniDLAAA') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-    font-family: 'almoni_dl_aaabold';
-    src: url('../fonts/almoni-dl-aaa-bold-webfont.eot');
-    src: url('../fonts/almoni-dl-aaa-bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/almoni-dl-aaa-bold-webfont.woff2') format('woff2'),
-    url('../fonts/almoni-dl-aaa-bold-webfont.woff') format('woff'),
-    url('../fonts/almoni-dl-aaa-bold-webfont.ttf') format('truetype'),
-    url('../fonts/almoni-dl-aaa-bold-webfont.svg#almoni_dl_aaabold') format('svg');
+    font-family: 'HelveticaNeueLTStd-Lt';
+    src: url('../fonts/HelveticaNeueLTStd-Lt.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeueLTStd-Lt.otf')  format('opentype'),
+    url('../fonts/HelveticaNeueLTStd-Lt.woff') format('woff'), url('../fonts/HelveticaNeueLTStd-Lt.ttf')  format('truetype'), url('../fonts/HelveticaNeueLTStd-Lt.svg#HelveticaNeueLTStd-Lt') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
-    font-family: 'almoni_dl_aaalight';
-    src: url('../fonts/almoni-dl-aaa-light-webfont.eot');
-    src: url('../fonts/almoni-dl-aaa-light-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/almoni-dl-aaa-light-webfont.woff2') format('woff2'),
-    url('../fonts/almoni-dl-aaa-light-webfont.woff') format('woff'),
-    url('../fonts/almoni-dl-aaa-light-webfont.ttf') format('truetype'),
-    url('../fonts/almoni-dl-aaa-light-webfont.svg#almoni_dl_aaalight') format('svg');
+    font-family: 'HelveticaNeueLTStd-Th';
+    src: url('../fonts/HelveticaNeueLTStd-Th.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeueLTStd-Th.otf')  format('opentype'),
+    url('../fonts/HelveticaNeueLTStd-Th.woff') format('woff'), url('../fonts/HelveticaNeueLTStd-Th.ttf')  format('truetype'), url('../fonts/HelveticaNeueLTStd-Th.svg#HelveticaNeueLTStd-Th') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
-    font-family: 'almoni_dl_aaaregular';
-    src: url('../fonts/almoni-dl-aaa-regular-webfont.eot');
-    src: url('../fonts/almoni-dl-aaa-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/almoni-dl-aaa-regular-webfont.woff2') format('woff2'),
-    url('../fonts/almoni-dl-aaa-regular-webfont.woff') format('woff'),
-    url('../fonts/almoni-dl-aaa-regular-webfont.ttf') format('truetype'),
-    url('../fonts/almoni-dl-aaa-regular-webfont.svg#almoni_dl_aaaregular') format('svg');
+    font-family: 'HelveticaNeueLTStd-UltLt';
+    src: url('../fonts/HelveticaNeueLTStd-UltLt.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeueLTStd-UltLt.otf')  format('opentype'),
+    url('../fonts/HelveticaNeueLTStd-UltLt.woff') format('woff'), url('../fonts/HelveticaNeueLTStd-UltLt.ttf')  format('truetype'), url('../fonts/HelveticaNeueLTStd-UltLt.svg#HelveticaNeueLTStd-UltLt') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @-moz-keyframes rotate {
     from { -moz-transform: rotate(0deg); }
     to { -moz-transform: rotate(360deg); }
@@ -140,19 +148,20 @@ body{
 .page1 h1{
     text-align: center;
     color:#fff;
-    font-family: 'almoni_dl_aaablack';
+    font-family: 'AlmoniDLAAA-Black';
     font-size:49px;
     position:absolute;
-    top: 0;
+    top: 115px;
     left: 0;
     width: 100%;
     z-index: 99;
 }
 .page1 h2{
-    font-family: 'almoni_dl_aaaregular';
+     font-family: 'AlmoniDLAAA';
     font-size:29px;
     color:#F08149;
     text-align:center;
+    margin-top: 5px;
 }
 
 .hexagon {
@@ -162,7 +171,7 @@ body{
     position: relative;
     top:20%;
     font-size:18px;
-    font-family: 'almoni_dl_aaabold';
+    font-family: 'AlmoniDLAAA-Bold';
     color:#fff;
 }
 .hexagon:before {
@@ -196,7 +205,7 @@ body{
     top: -60px;
     left: 9px;
     font-size:18px;
-    font-family: 'almoni_dl_aaabold';
+    font-family: 'AlmoniDLAAA-Bold';
     color:#fff;
 }
 .hexagon-logo-in:before {
@@ -228,7 +237,7 @@ body{
     position: relative;
     top:20%;
     font-size:18px;
-    font-family: 'almoni_dl_aaabold';
+    font-family: 'AlmoniDLAAA-Bold';
     color:#fff;
 }
 .hexagon-logo:before {
@@ -269,23 +278,23 @@ body{
 .hexagon-group-1-under{
     position: absolute;
     left: 0;
-    bottom: 160px;
+    bottom: 276px;
     width: 100%;
     z-index: 999;
 }
 .hexagon-group-1-under>p{
    font-size:15px;
     color:#fff;
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
     text-align: center;
-    width: 50%;
-    left: 25%;
+    width: 30%;
+    left: 35%;
     position: absolute;
 }
 .hexagon-group-1-under a{
     font-size:39px;
     color:#fff;
-    font-family: 'almoni_dl_aaabold';
+    font-family: 'AlmoniDLAAA-Bold';
     text-decoration:none;
 }
 .hexagon p{
@@ -359,7 +368,7 @@ body{
 }
 .footer-menu .nav a{
     font-size:25px;
-    font-family: 'almoni_dl_aaabold';
+    font-family: 'AlmoniDLAAA-Bold';
     color:#fff!important;
 }
 
@@ -487,10 +496,10 @@ body{
     -webkit-transform: translate(-50%, -50%);
     font-size:49px;
     color: #fff;
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
     text-align: center;
     width: 600%;
-    top: -280px;
+    top: -300px;
     left: 50%;
 }
 /*.hexagon-group-2 label{*/
@@ -506,13 +515,13 @@ body{
     position:absolute;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    top:60%;
+    top:58%;
     left:50%;
     width: 110px;
     cursor:pointer;
 }
 .hexagon-6 p{
-    font-family: 'almoni_dl_aaablack';
+    font-family: 'AlmoniDLAAA-Black';
     font-size:49px;
     color:#fff;
     transform: translate(-50%, -50%);
@@ -524,10 +533,11 @@ body{
 }
 .hexagon-6 {
      height: 64px!important;
+    margin-top: -68px!important;
 }
 .hexagon-group-2>p{
     font-size:15px;
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
     color:#F08149;
     text-align: center;
     position:relative;
@@ -552,7 +562,7 @@ body{
 }
 .header-menu .nav a{
     font-size:25px;
-    font-family: 'almoni_dl_aaabold';
+    font-family: 'AlmoniDLAAA-Bold';
     color:#fff!important;
 }
 
@@ -597,7 +607,7 @@ body{
  .links a{
     color:#15535F;
     font-size:12px;
-    font-family: 'almoni_dl_aaaregular';
+     font-family: 'AlmoniDLAAA';
 }
  .links span{
     color:#15535F;
@@ -605,7 +615,7 @@ body{
 
 .footer-control-2 ul li a{
     font-size:29px;
-    font-family: 'almoni_dl_aaabold';
+    font-family: 'AlmoniDLAAA-Bold';
     color:#104C50;
 }
 
@@ -615,7 +625,7 @@ body{
 }
 .footer-control-3 ul li a{
     font-size:29px;
-    font-family: 'almoni_dl_aaabold';
+    font-family: 'AlmoniDLAAA-Bold';
     color:#104C50;
 }
 .footer-control-3 ul li a img{
@@ -628,7 +638,7 @@ body{
 }
 .footer-control-4 ul li a{
     font-size:29px;
-    font-family: 'almoni_dl_aaabold';
+    font-family: 'AlmoniDLAAA-Bold';
     color:#104C50;
 }
 /*.footer-control-4 ul li a img{*/
@@ -641,7 +651,7 @@ body{
 }
 .footer-control-5 ul li a{
     font-size:29px;
-    font-family: 'almoni_dl_aaabold';
+    font-family: 'AlmoniDLAAA-Bold';
     color:#104C50;
 }
 /*.footer-control-4 ul li a img{*/
@@ -654,7 +664,7 @@ body{
 }
 .footer-control-6 ul li a{
     font-size:29px;
-    font-family: 'almoni_dl_aaabold';
+    font-family: 'AlmoniDLAAA-Bold';
     color:#104C50;
 }
 /*.footer-control-4 ul li a img{*/
@@ -694,22 +704,22 @@ body{
     height: 100%;
     text-align: center;
 }
-.content-plant h1{
+.content-plant>h1{
     position:absolute;
-    top:13%;
+    top:19%;
     left:0;
     width: 100%;
     text-align: center;
     font-size:49px;
-    font-family: 'almoni_dl_aaablack';
+    font-family: 'AlmoniDLAAA-Black';
     color:#fff;
     z-index:99999999;
 }
-.content-plant p{
+.content-plant>p{
     position:absolute;
-    top: 70%;
+    top: 64%;
     font-size:20px;
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
     color:#fff;
     width: 460px;
     left: calc(50% - 230px);
@@ -717,17 +727,17 @@ body{
 }
 .sports{
     position:absolute;
-    top: 28%;
-    left: calc(50% - 110px);
+    top: 35%;
+    left: calc(50% - 132px);
 }
 .plant{
     position:absolute;
-    top: 24%;
-    left: calc(50% - 139px);
+    top: 29%;
+    left: calc(50% - 169px);
 }
 .bush{
     position:absolute;
-    top: 24%;
+    top: 28%;
     left: calc(50% - 170px);
 }
 .hex{
@@ -748,10 +758,10 @@ body{
 }
 .growslove h1{
     font-size:49px;
-    font-family: 'almoni_dl_aaablack';
+    font-family: 'AlmoniDLAAA-Black';
     position: absolute;
     color:#fff;
-    top: -261px;
+    top: -298px;
     left: calc(50% - 200px);
     width: 400px;
     overflow: hidden;
@@ -776,8 +786,13 @@ body{
 }
 .trees{
     position: absolute;
-    top: calc(50% - 142px);
+    top: calc(50% - 82px);
     left: calc(50% - 86px);
+}
+.shadow{
+    position: absolute;
+    top: calc(50% - -164px);
+    left: calc(50% - 180px);
 }
 .growslove .shine{
     position: absolute;
@@ -827,42 +842,42 @@ body{
 /*}*/
 
 .hex-content-1 span{
-    font-family: 'almoni_dl_aaaregular';
+     font-family: 'AlmoniDLAAA';
     font-size:22px;
     color:#fff;
 }
 .hex-content-2 span{
-    font-family: 'almoni_dl_aaaregular';
+     font-family: 'AlmoniDLAAA';
     font-size:22px;
     color:#fff;
 }
 .hex-content-3 span{
-    font-family: 'almoni_dl_aaaregular';
+     font-family: 'AlmoniDLAAA';
     font-size:22px;
     color:#fff;
 }
 .hex-content-4 span{
-    font-family: 'almoni_dl_aaaregular';
+     font-family: 'AlmoniDLAAA';
     font-size:22px;
     color:#fff;
 }
 .hex-content-1 p{
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
     font-size:15px;
     color:#fff;
 }
 .hex-content-2 p{
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
     font-size:15px;
     color:#fff;
 }
 .hex-content-3 p{
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
     font-size:15px;
     color:#fff;
 }
 .hex-content-4 p{
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
     font-size:15px;
     color:#fff;
 }
@@ -927,12 +942,12 @@ body{
 }
 .set-up h1{
     font-size:49px;
-    font-family: 'almoni_dl_aaablack';
+    font-family: 'AlmoniDLAAA-Black';
     position: absolute;
     color:#fff;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    top: -361px;
+    top: -262px;
     width: 400%;
     text-align: center;
 }
@@ -948,7 +963,7 @@ body{
 /*.closes-sup-1,.closes-sup-2,.closes-sup-3,.closes-sup-4,.closes-sup-5,.closes-sup-6,.closes-sup-7{*/
     /*z-index:9;*/
 /*}*/
-.info-sup-1{
+.info-sup-1,.info-sup-heart{
     position:absolute;
     visibility:hidden;
     opacity:0;
@@ -957,6 +972,7 @@ body{
     right: 75px;
     top: 10px;
 }
+
 .info-sup-1 h2{
     background-color: #F08149;
     padding: 10px;
@@ -964,7 +980,19 @@ body{
     border-top-right-radius: 10px;
     color: #fff;
     text-align: right;
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
+    font-size:32px;
+    margin-top:0;
+    width: 201px;
+}
+.info-sup-heart h2{
+    background-color: #F08149;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    text-align: right;
+    font-family: 'AlmoniDLAAA-Light';
     font-size:32px;
     margin-top:0;
     width: 201px;
@@ -973,16 +1001,21 @@ body{
      padding: 10px;
      text-align: right;
     font-size:15px;
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
 }
-
+.info-sup-heart p{
+    padding: 10px;
+    text-align: right;
+    font-size:15px;
+    font-family: 'AlmoniDLAAA-Light';
+}
 .open-sup-1{
-    top: -222px;
-    right: 130px;
+    top: -164px;
+    right: 109px;
 }
 .open-sup-2{
-    top: -96px;
-    right: 138px;
+    top: -70px;
+    right: 108px;
 }
 .open-sup-3{
     top: 176px;
@@ -1015,7 +1048,7 @@ body{
 
 .bxslider h2{
     font-size:28px;
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
     color: #fff;
     text-align: right;
     background-color: #F08149;
@@ -1024,7 +1057,7 @@ body{
 }
 .bxslider h1{
     font-size:44px;
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
     color: #fff;
     text-align: right;
     margin-top: -20px;
@@ -1033,7 +1066,7 @@ body{
 }
 .bxslider p{
     font-size:20px;
-    font-family: 'almoni_dl_aaalight';
+   font-family: 'AlmoniDLAAA-Light';
     color: #fff;
     text-align: right;
 }
@@ -1152,21 +1185,21 @@ body{
 
 .page10 h1{
     font-size:49px;
-    font-family: 'almoni_dl_aaablack';
+    font-family: 'AlmoniDLAAA-Black';
     color:#fff;
     position:absolute;
-    top: 15%;
+    top: 26%;
     width: 100%;
     left: 0;
     text-align: center;
   }
 .page10 .content>p {
     font-size: 29px;
-    font-family: 'almoni_dl_aaaregular';
+     font-family: 'AlmoniDLAAA';
     color: #F08149;
     position: absolute;
     left: 0;
-    top: 70%;
+    top: 67%;
     width: 100%;
     text-align: center;
 }
@@ -1197,7 +1230,7 @@ body{
     opacity: 0;
     top: -12px;
     font-size: 21px;
-    font-family: 'almoni_dl_aaaregular';
+     font-family: 'AlmoniDLAAA';
     text-decoration: none;
     transition: all, 1s;
     -webkit-transition: all, 1s;
@@ -1273,7 +1306,7 @@ body{
     background-position: 0 -82px!important;
 }
 .icon-heart-girl{
-    background-position:0px -164px;
+    background-position:0px -164px!important;
     position: relative;
 }
 .closes-icon{
@@ -1286,8 +1319,8 @@ input[name="enter"]{
 .label-radio{
     background-image: url(../img/radio.png);
     background-repeat:no-repeat;
-    background-position: 87% 8px;
-    font-family: 'almoni_dl_aaalight';
+    background-position: 85% 8px;
+   font-family: 'AlmoniDLAAA-Light';
     font-size:28px;
     color:#fff;
     display: block;
@@ -1300,11 +1333,11 @@ input[name="enter"]{
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     width: 500%;
-    top: -90px;
+    top: -150px;
     left: 50%;
 }
 .label-active{
-    background-position: 87% -60px!important;
+    background-position: 85% -60px!important;
 }
 
 .page3 .back-ground-2{
@@ -1425,4 +1458,21 @@ input[name="enter"]{
     border-top-color: #fffaf0;
     border-width: 10px;
     margin-left: -10px;
+}
+.blur-active{
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+.blur-off{
+    -webkit-filter:none;
+    -moz-filter: none;
+    -o-filter: none;
+    -ms-filter: none;
+    filter: none;
+}
+.bx-wrapper{
+    top:0;
 }
