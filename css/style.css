@@ -151,7 +151,7 @@ body{
     font-family: 'AlmoniDLAAA-Black';
     font-size:49px;
     position:absolute;
-    top: 115px;
+    top: 20px;
     left: 0;
     width: 100%;
     z-index: 99;
@@ -278,7 +278,7 @@ body{
 .hexagon-group-1-under{
     position: absolute;
     left: 0;
-    bottom: 276px;
+    bottom: 175px;
     width: 100%;
     z-index: 999;
 }
@@ -1475,4 +1475,36 @@ input[name="enter"]{
 }
 .bx-wrapper{
     top:0;
+}
+@media(max-height:709px){
+    .growslove h1 {
+        top: -268px!important;
+    }
+    .content-plant>h1 {
+        top: 12%!important;
+    }
+    .seeds {
+        top: 25%;
+    }
+    .sports {
+        top: 30%;
+    }
+    .plant {
+        top: 22%;
+    }
+    .bush {
+        top: 23%;
+    }
+    .page7.content-plant>p {
+        top: 68%!important;
+    }
+    .set-up h1 {
+        top: -240px;
+    }
+    .set-up  {
+        top: 52%;
+    }
+    .page10 h1 {
+        top: 16%;
+    }
 }
