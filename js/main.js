@@ -108,26 +108,17 @@ $(document).ready(function(){
     });
     setInterval(function(){
     var $opens = $(".open-sup-1");
-    var $opensh = $(".heart");
     if($opens.is(":hover")) {
-        $('.info-sup-1').addClass('info-sup-vis');
         $('.icon-add-1').addClass('icon-closes');
     }
     else {
-        $('.info-sup-1').removeClass('info-sup-vis');
         $('.icon-add-1').removeClass('icon-closes');
-    if($opensh.is(":hover")) {
-        $('.info-sup-heart').addClass('info-sup-vis');
-        $('.icon-add-heart').addClass('icon-closes');
-    }
-    else {
-        $('.info-sup-heart').removeClass('info-sup-vis');
-        $('.icon-add-heart').removeClass('icon-closes');
-    }
     }}, 200);
 
 
-
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
 
     $('.label-radio').click(function() {
         $('.label-active').each(function(){$(this).removeClass('label-active')})
