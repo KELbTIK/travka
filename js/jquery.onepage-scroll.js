@@ -149,6 +149,10 @@
             if(settings.pagination == true) {
                 $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
                 $(".onepage-pagination li a" + "[data-index='" + next.data("index") + "']").addClass("active");
+                //TODO
+                setTimeout(function(){
+                    $(".onepage-pagination li a" + "[data-index='" + next.data("index") + "']").addClass('fadeInLeftAfter');
+                }, 1000)
             }
 
             $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
@@ -180,10 +184,16 @@
             }
             if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
             current.removeClass("active")
-            next.addClass("active")
+            next.addClass("active");
+            //TODO
+            sectionAnimation(next);
             if(settings.pagination == true) {
                 $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
                 $(".onepage-pagination li a" + "[data-index='" + next.data("index") + "']").addClass("active");
+                //TODO
+                setTimeout(function(){
+                    $(".onepage-pagination li a" + "[data-index='" + next.data("index") + "']").addClass('fadeInLeftAfter');
+                }, 1000)
             }
             $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
             $("body").addClass("viewing-page-"+next.data("index"))
@@ -208,6 +218,10 @@
                 next.addClass("active")
                 $(".onepage-pagination li a" + ".active").removeClass("active");
                 $(".onepage-pagination li a" + "[data-index='" + (page_index) + "']").addClass("active");
+                //TODO
+                setTimeout(function(){
+                    $(".onepage-pagination li a" + "[data-index='" + (page_index) + "']").addClass('fadeInLeftAfter');
+                }, 1000)
                 $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
                 $("body").addClass("viewing-page-"+next.data("index"))
 

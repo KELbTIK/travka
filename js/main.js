@@ -52,6 +52,7 @@ $(document).ready(function(){
     });
     var slider = $('.bxslider').bxSlider();
     $('#trigger-overlay-slider').click(function(){
+        $('#slider-2').addClass('open');
         slider.reloadSlider();
         $('.header-menu').hide();
         $('.onepage-pagination').hide();
