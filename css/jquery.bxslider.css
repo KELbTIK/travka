@@ -44,6 +44,7 @@
     	-ms-transform: translatez(0);
     	-o-transform: translatez(0);
     	transform: translatez(0);
+    max-height: 435px;
 }
 
 .bx-wrapper .bx-pager,
