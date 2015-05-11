@@ -130,6 +130,9 @@
 .viewing-page-1 .popover{
     max-width: 582px;
 }
+.viewing-page-1 .popover-content{
+    text-align: center;
+}
 .viewing-page-1 .popover-title {
     padding: 13px 14px;
     max-width: 582px;
