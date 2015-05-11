@@ -1333,6 +1333,9 @@ input[name="enter"]{
     display: block;
     font-weight: normal;
     cursor:pointer;
+    margin-right: 20px;
+    padding-right: 80px;
+    text-align: right;
 }
 
 .radio-group{
