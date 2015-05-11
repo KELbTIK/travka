@@ -731,7 +731,7 @@ body{
    font-family: 'AlmoniDLAAA-Light';
     color:#fff;
     width: 580px;
-    left: calc(50% - 230px);
+    left: calc(50% - 290px);
     text-align: center;
 }
 .sports{
@@ -1327,15 +1327,12 @@ input[name="enter"]{
     background-image: url(../img/radio.png);
     background-repeat:no-repeat;
     background-position: 91% 9px;
-    font-family: 'AlmoniDLAAA-Light';
+   font-family: 'AlmoniDLAAA-Light';
     font-size:28px;
     color:#fff;
     display: block;
     font-weight: normal;
     cursor:pointer;
-    margin-right: 20px;
-    padding-right: 80px;
-    text-align: right;
 }
 
 .radio-group{
@@ -1509,7 +1506,7 @@ input[name="enter"]{
         top: 68%!important;
     }
     .set-up h1 {
-        top: -260px;
+        top: -240px;
     }
     .set-up  {
         top: 52%;
