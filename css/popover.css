@@ -5,7 +5,6 @@
     z-index: 1060;
     display: none;
     max-width: 350px;
-    padding: 1px;
     font-family: 'AlmoniDLAAA-Light';
     font-size: 14px;
     font-weight: normal;
@@ -124,4 +123,16 @@
 
 .popover{
     padding: 0
+}
+.viewing-page-6 .popover{
+
+    max-width: 190px!important;
+}
+.viewing-page-1 .popover{
+    max-width: 582px;
+    text-align:center;
+}
+.viewing-page-1 .popover-title {
+    padding: 13px 14px;
+    max-width: 582px;
 }
