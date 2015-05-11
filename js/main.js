@@ -50,12 +50,24 @@ $(document).ready(function(){
         responsiveFallback: 600,
         loop: true
     });
+    var slider_4 = $('#slider-4').bxSlider();
+    var slider_5 = $('#slider-5').bxSlider();
+    var slider_6 = $('#slider-6').bxSlider();
     var slider_7 = $('#slider-7').bxSlider();
     var slider_8 = $('#slider-8').bxSlider();
     $('.trigger-overlay-slider').click(function(){
         var slider_elem = $(this).parents('section').find('.overlay-slider');
         slider_elem.removeClass('close');
         slider_elem.addClass('open');
+        if ($(this).parents('section').hasClass('page4')){
+            slider = slider_4;
+        }
+        if ($(this).parents('section').hasClass('page5')){
+            slider = slider_5;
+        }
+        if ($(this).parents('section').hasClass('page6')){
+            slider = slider_6;
+        }
         if ($(this).parents('section').hasClass('page7')){
             slider = slider_7;
         }
