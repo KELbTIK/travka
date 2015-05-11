@@ -466,7 +466,7 @@ body{
 }
 .icon-species{
     background-position: 0px -323px;
-    height: 32px;
+    height: 32px!important;
 }
 
 .icon-fertilizer{
