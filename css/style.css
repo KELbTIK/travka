@@ -529,7 +529,7 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    right: -26px;
+    right: -31px;
 }
 .hexagon-6 {
      height: 64px!important;
@@ -1319,7 +1319,7 @@ input[name="enter"]{
 .label-radio{
     background-image: url(../img/radio.png);
     background-repeat:no-repeat;
-    background-position: 85% 8px;
+    background-position: 85% 9px;
    font-family: 'AlmoniDLAAA-Light';
     font-size:28px;
     color:#fff;
@@ -1507,4 +1507,10 @@ input[name="enter"]{
     .page10 h1 {
         top: 16%;
     }
+}
+.icon-add:hover{
+    background-position: 0 -82px!important;
+}
+.page8 .popover{
+    max-width: 190px!important;
 }

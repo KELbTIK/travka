@@ -121,6 +121,7 @@
     border-right-width: 0;
     border-left-color: #fff;
 }
-.page8 .popover{
-    max-width: 190px!important;
+
+.popover{
+    padding: 0
 }
