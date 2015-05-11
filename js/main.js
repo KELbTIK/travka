@@ -76,13 +76,15 @@ $(document).ready(function(){
         }
         slider.reloadSlider();
         slider.goToSlide(parseInt($(this).attr('href').substring(1))-1);
-        $('.header-menu').hide();
+        $('.header-menu').css('visibility', 'hidden');
+        $('.logo-header').css('visibility', 'hidden');
         $('.onepage-pagination').hide();
     })
     $('.overlay-close').click(function(){
         if ($(this).hasClass('close-main')){
         }else{
-            $('.header-menu').show();
+            $('.header-menu').css('visibility', 'visible');
+            $('.logo-header').css('visibility', 'visible');
             $('.onepage-pagination').show();
         }
         $(this).parent().removeClass('open');
