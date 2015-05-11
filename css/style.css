@@ -507,7 +507,7 @@ body{
    font-family: 'AlmoniDLAAA-Light';
     text-align: center;
     width: 600%;
-    top: -315px;
+    top: -218px;
     left: 50%;
 }
 /*.hexagon-group-2 label{*/
@@ -523,7 +523,7 @@ body{
     position:absolute;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    top:58%;
+    top:45%;
     left:50%;
     width: 110px;
     cursor:pointer;
@@ -535,13 +535,13 @@ body{
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     right: -31px;
 }
 .hexagon-6 {
      height: 64px!important;
-    margin-top: -68px!important;
+    /*margin-top: -68px!important;*/
 }
 .hexagon-group-2>p{
     font-size:15px;
@@ -549,7 +549,7 @@ body{
     color:#F08149;
     text-align: center;
     position:relative;
-    top:45px;
+    top:75px;
 }
 .closes{
     position:absolute;
@@ -1340,7 +1340,7 @@ input[name="enter"]{
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     width: 500%;
-    top: -163px;
+    top: -68px;
     left: 50%;
 }
 .label-active{
@@ -1525,4 +1525,9 @@ input[name="enter"]{
     position: absolute;
     top: calc(50% - -176px)!important;
     left: calc(50% - 212px)!important;
+}
+
+.pre-title{
+    visibility: hidden;
+    -webkit-animation-name: none;
 }

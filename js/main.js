@@ -2,6 +2,7 @@
  * Created by KELT on 10.05.2015.
  */
 function sectionAnimation(element){
+
     var reveal_mas = [];
     var count_anim = 15;
     for (var i = 0; i < count_anim; i++){
@@ -12,7 +13,6 @@ function sectionAnimation(element){
             elem.removeAttr('style');
             elem.addClass('animated');
         }, i* interval)
-
     }
 
     var reveal_count = 0;
@@ -148,7 +148,7 @@ $(document).ready(function(){
     $('.close-main').click(function() {
         $('.blur').addClass('blur-off');
     });
-
+    $('.reveal').removeClass('pre-title');
     $('.reveal, .animation-section, .onepage-pagination li a:after').each(function(){
         $(this).css('visibility', 'hidden');
         $(this).css('-webkit-animation-name', 'none');
