@@ -1143,8 +1143,8 @@ body{
 
 .girl-end{
     position:absolute;
-    top: 270px;
-    left: -150px;
+    top: 215px;
+    left: -185px;
     z-index: 99;
 }
 .hexagon-group-3{
@@ -1513,4 +1513,9 @@ input[name="enter"]{
 }
 .icon-heart-girl:hover{
     background-position: 0 -82px!important;
+}
+.shadow-set-up {
+    position: absolute;
+    top: calc(50% - -176px)!important;
+    left: calc(50% - 212px)!important;
 }
