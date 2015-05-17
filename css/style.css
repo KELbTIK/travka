@@ -392,8 +392,8 @@ body{
     display:inline-block;
 }
 .icon-container-menu{
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
     margin: 0 auto;
     display:inline-block;
 }
@@ -432,54 +432,53 @@ body{
 }
 .icon-heart{
     background-position: 0px -32px;
-    margin-top:2px;
+    margin-top:5px;
 }
 .icon-sprout{
-    background-position: 0px -69px;
-    margin-top: 2px;
+    background-position: 0px -62px;
     height: 30px!important;
 }
 .icon-glebe{
     margin-top: 3px;
-    background-position: 0px -105px;
+    background-position: 0px -97px;
 }
 .icon-water{
-    margin-top: 3px;
-    background-position: 0px -140px;
+    margin-top: 5px;
+    background-position: 0px -130px;
 }
 .icon-conditioning{
     margin-top: 3px;
-    background-position: 0px -174px;
+    background-position: 0px -161px;
 }
 .icon-sun{
     margin-top: 3px;
-    background-position: 0px -210px;
+    background-position: 0px -194px;
 }
 .icon-zipper{
     margin-top: 3px;
-    background-position: 0px -246px;
+    background-position: 0px -226px;
     height: 32px!important;
 }
 .icon-picking{
-    background-position: 0px -284px;
+    background-position: 0px -262px;
     height: 32px!important;
 }
 .icon-species{
-    background-position: 0px -323px;
+    background-position: 0px -299px;
     height: 32px!important;
 }
 
 .icon-fertilizer{
-    margin-top: 3px;
-    background-position: 0px -365px;
+    margin-top: -1px;
+    background-position: 0px -338px;
 }
 .icon-control{
     margin-top: 4px;
-    background-position: 0px -402px;
+    background-position: 0px -371px;
 }
 .icon-space{
     margin-top: 4px;
-    background-position: 0px -438px;
+    background-position: 0px -405px;
 }
 .footer-menu .logo{
     position: absolute;
@@ -1536,4 +1535,8 @@ input[name="enter"]{
 .pre-title{
     visibility: hidden;
     -webkit-animation-name: none;
+}
+.hexagon-fix{
+    position: relative;
+    top: -32px;
 }

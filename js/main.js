@@ -49,6 +49,7 @@ function clearAnimation(){
             $(this).css('visibility', 'hidden');
             $(this).css('-webkit-animation-name', 'none');
         })
+
         $('.onepage-pagination li a').each(function(){
             $(this).removeClass('fadeInLeftAfter');
         })
