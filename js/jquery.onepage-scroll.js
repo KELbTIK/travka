@@ -123,6 +123,7 @@
         }
 
         $.fn.moveDown = function() {
+            clearAnimation();
             var el = $(this)
             index = $(settings.sectionContainer +".active").data("index");
             current = $(settings.sectionContainer + "[data-index='" + index + "']");
@@ -151,8 +152,11 @@
                 $(".onepage-pagination li a" + "[data-index='" + next.data("index") + "']").addClass("active");
                 //TODO
                 setTimeout(function(){
-                    $(".onepage-pagination li a" + "[data-index='" + next.data("index") + "']").addClass('fadeInLeftAfter');
+                    $(".onepage-pagination li:not(:first-child) a" + "[data-index='" + next.data("index") + "']").addClass('fadeInLeftAfter');
                 }, 1000)
+                setTimeout(function(){
+                    $(".onepage-pagination li:first-child a" + "[data-index='" + next.data("index") + "']").addClass('fadeInLeftAfter');
+                }, 3500)
             }
 
             $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
@@ -166,6 +170,7 @@
         }
 
         $.fn.moveUp = function() {
+            clearAnimation();
             var el = $(this)
             index = $(settings.sectionContainer +".active").data("index");
             current = $(settings.sectionContainer + "[data-index='" + index + "']");
@@ -192,8 +197,11 @@
                 $(".onepage-pagination li a" + "[data-index='" + next.data("index") + "']").addClass("active");
                 //TODO
                 setTimeout(function(){
-                    $(".onepage-pagination li a" + "[data-index='" + next.data("index") + "']").addClass('fadeInLeftAfter');
+                    $(".onepage-pagination li:not(:first-child) a" + "[data-index='" + next.data("index") + "']").addClass('fadeInLeftAfter');
                 }, 1000)
+                setTimeout(function(){
+                    $(".onepage-pagination li:first-child a" + "[data-index='" + next.data("index") + "']").addClass('fadeInLeftAfter');
+                }, 3500)
             }
             $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
             $("body").addClass("viewing-page-"+next.data("index"))
@@ -206,7 +214,7 @@
         }
 
         $.fn.moveTo = function(page_index) {
-
+            clearAnimation();
             current = $(settings.sectionContainer + ".active")
             next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
             //TODO
@@ -220,8 +228,11 @@
                 $(".onepage-pagination li a" + "[data-index='" + (page_index) + "']").addClass("active");
                 //TODO
                 setTimeout(function(){
-                    $(".onepage-pagination li a" + "[data-index='" + (page_index) + "']").addClass('fadeInLeftAfter');
+                    $(".onepage-pagination li:not(:first-child) a" + "[data-index='" + (page_index) + "']").addClass('fadeInLeftAfter');
                 }, 1000)
+                setTimeout(function(){
+                    $(".onepage-pagination li:first-child a" + "[data-index='" + (page_index) + "']").addClass('fadeInLeftAfter');
+                }, 3500)
                 $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
                 $("body").addClass("viewing-page-"+next.data("index"))
 

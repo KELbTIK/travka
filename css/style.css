@@ -123,11 +123,11 @@ body{
     position: absolute;
     background: url(../img/wheel.png) no-repeat center;
     animation-name: rotate;
-    animation-duration: 60s;
+    animation-duration: 90s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     -webkit-animation-name: rotate;
-    -webkit-animation-duration: 60s;
+    -webkit-animation-duration: 90s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 }
@@ -797,11 +797,13 @@ body{
     position: absolute;
     top: calc(50% - 82px);
     left: calc(50% - 86px);
+    z-index: 99;
 }
 .shadow{
     position: absolute;
     top: calc(50% - -164px);
     left: calc(50% - 180px);
+    z-index: 99;
 }
 .growslove .shine{
     position: absolute;
@@ -810,13 +812,13 @@ body{
 }
 .girl{
     position: absolute;
-    left: 89px;
+    left: 115px;
     top: -180px;
 
 }
 .shovel{
     position: absolute;
-    left: 40px;
+    left: 66px;
     top: -155px;
     z-index: 999;
 }
@@ -826,7 +828,7 @@ body{
     left: calc(50% - 30px);
     top: 10px;
     cursor: pointer;
-
+    z-index: 99;
 }
 .cabin{
     position: absolute;
@@ -835,6 +837,7 @@ body{
     width: 263px;
     height: 442px;
     background: url('../img/cabin.png') no-repeat 0 0;
+    z-index: 9;
 }
 
 /*.heart{*/
@@ -1357,7 +1360,7 @@ input[name="enter"]{
     position:absolute;
     width: 100%;
     height: 170px;
-    z-index: 100;
+    z-index: 98;
     background-color: #104C50;
     bottom: 50px;
     left: 0;
@@ -1509,7 +1512,7 @@ input[name="enter"]{
         top: 68%!important;
     }
     .set-up h1 {
-        top: -240px;
+        top: -260px;
     }
     .set-up  {
         top: 52%;

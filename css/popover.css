@@ -138,3 +138,6 @@
     max-width: 582px;
     text-align:center;
 }
+.viewing-page-1 .popover.bottom > .arrow:after{
+   border-bottom-color: #F08149;
+}
