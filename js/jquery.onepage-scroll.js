@@ -123,7 +123,7 @@
         }
 
         $.fn.moveDown = function() {
-            clearAnimation();
+
 
             var el = $(this)
             index = $(settings.sectionContainer +".active").data("index");
@@ -145,6 +145,7 @@
             next.addClass("active");
 
             //TODO
+            clearAnimation(current);
             sectionAnimation(next);
             footerContent(next,'#footer_content');
 
@@ -171,7 +172,6 @@
         }
 
         $.fn.moveUp = function() {
-            clearAnimation();
             var el = $(this)
             index = $(settings.sectionContainer +".active").data("index");
             current = $(settings.sectionContainer + "[data-index='" + index + "']");
@@ -192,6 +192,7 @@
             current.removeClass("active")
             next.addClass("active");
             //TODO
+            clearAnimation(current);
             sectionAnimation(next);
             footerContent(next,'#footer_content');
 
@@ -217,10 +218,10 @@
         }
 
         $.fn.moveTo = function(page_index) {
-            clearAnimation();
             current = $(settings.sectionContainer + ".active")
             next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
             //TODO
+            clearAnimation(current);
             sectionAnimation(next);
             footerContent(next,'#footer_content');
 
