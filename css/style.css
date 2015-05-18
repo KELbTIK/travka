@@ -445,14 +445,14 @@ body{
     margin-top: 3px;
     background-position: 0px -168px;
 }
-.icon-zipper{
-    margin-top: 3px;
-    background-position: 0px -195px;
-    height: 32px!important;
+.icon-zipper {
+    margin-top: -1px;
+    background-position: 0px -192px;
+    height: 35px!important;
 }
 .icon-picking{
     background-position: 0px -227px;
-    height: 32px!important;
+    height: 35px!important;
 }
 .icon-species{
     background-position: 0px -259px;
