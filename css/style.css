@@ -369,6 +369,8 @@ body{
     background-color: #15535F!important;
 }
 
+
+
 .social-bar{
     margin-top: 25px;
     margin-left: 15px;
@@ -588,6 +590,8 @@ body{
     width: 100%;
     background-color: #E7EEEF;
     z-index:9999999999;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
 .footer-first{
     z-index: 9999;

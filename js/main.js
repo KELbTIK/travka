@@ -49,7 +49,7 @@ function clearAnimation(section){
         setTimeout(
             function() {
                 section.find('.content').removeClass('fadeOut animated');
-                $('.animated:not(.header-menu):not(.icon-add):not(.icon-heart-girl)').each(function(){$(this).removeClass('animated')});
+                $('.animated:not(.header-menu):not(.icon-add):not(.icon-heart-girl):not(.logo-header)').each(function(){$(this).removeClass('animated')});
                 section.find('.reveal:not(.header-menu):not(.footer-control):not(.logo-header), .animation-section').each(function(){
                     $(this).css('visibility', 'hidden');
                     $(this).css('-webkit-animation-name', 'none');
@@ -95,8 +95,10 @@ function footerContent(section, footer){
             $('.onepage-pagination').hide();
         })
         $(footer).parent().removeClass('footer-last');
-        $('.header-menu').css('visibility', 'visible');
-        $('.logo-header').css('visibility', 'visible');
+        $('.header-menu').removeClass('fadeOutUp');
+        $('.header-menu').addClass('fadeInDown');
+        $('.logo-header').removeClass('zoomOut');
+        $('.logo-header').addClass('zoomIn');
 
     }else if ($(section).hasClass('page10') == false){
         $(footer).html('<img class="control-down" src="img/control.png" alt=""/>');
@@ -104,13 +106,22 @@ function footerContent(section, footer){
             $(".main").moveDown();
         });
         $(footer).parent().removeClass('footer-last');
-        $('.header-menu').css('visibility', 'visible');
-        $('.logo-header').css('visibility', 'visible');
+        $('.header-menu').removeClass('fadeOutUp');
+        $('.header-menu').addClass('fadeInDown');
+        $('.logo-header').removeClass('zoomOut');
+        $('.logo-header').addClass('zoomIn');
+
     }else{
-        $(footer).html('<img class="control-up" src="img/control-up.png" alt=""/>' + footer_cont.html() + '<img class="logo reveal reveal-8" src="img/footer-header-img.png" alt=""/>');
+        $(footer).html('' +
+            '<img class="control-up" src="img/control-up.png" alt=""/>' +
+            footer_cont.html() +
+            '<img class="logo reveal reveal-8 zoomIn animated" src="img/footer-header-img.png" alt=""/>'
+        );
         $(footer).parent().addClass('footer-last');
-        $('.header-menu').css('visibility', 'hidden');
-        $('.logo-header').css('visibility', 'hidden');
+        $('.header-menu').removeClass('fadeInDown');
+        $('.header-menu').addClass('fadeOutUp');
+        $('.logo-header').removeClass('zoomIn');
+        $('.logo-header').addClass('zoomOut');
         $('.control-up').click(function() {
             $(".main").moveTo(1);
         });
