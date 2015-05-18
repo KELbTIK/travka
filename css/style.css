@@ -1484,3 +1484,6 @@ input[name="enter"]{
 .onepage-wrapper .section {
     height: 101%;
 }
+ .navbar-right{
+     opacity:0;
+}
