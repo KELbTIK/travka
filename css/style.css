@@ -420,54 +420,55 @@ body{
 
 }
 .icon-heart{
-    background-position: 0px -32px;
-    margin-top:5px;
+    background-position: 0px -27px;
+    margin-top: 5px;
 }
 .icon-sprout{
-    background-position: 0px -62px;
+    background-position: 0px -51px;
     height: 30px!important;
 }
 .icon-glebe{
     margin-top: 3px;
-    background-position: 0px -97px;
+    background-position: 0px -83px;
 }
 .icon-water{
     margin-top: 5px;
-    background-position: 0px -130px;
+    background-position: 0px -111px;
+}
 }
 .icon-conditioning{
     margin-top: 3px;
-    background-position: 0px -161px;
+    background-position: 0px -139px;
 }
 .icon-sun{
     margin-top: 3px;
-    background-position: 0px -194px;
+    background-position: 0px -168px;
 }
 .icon-zipper{
     margin-top: 3px;
-    background-position: 0px -226px;
+    background-position: 0px -195px;
     height: 32px!important;
 }
 .icon-picking{
-    background-position: 0px -262px;
+    background-position: 0px -227px;
     height: 32px!important;
 }
 .icon-species{
-    background-position: 0px -299px;
+    background-position: 0px -259px;
     height: 32px!important;
 }
 
 .icon-fertilizer{
     margin-top: -1px;
-    background-position: 0px -338px;
+    background-position: 0px -293px;
 }
 .icon-control{
     margin-top: 4px;
-    background-position: 0px -371px;
+    background-position: 0px -322px;
 }
 .icon-space{
     margin-top: 4px;
-    background-position: 0px -405px;
+    background-position: 0px -351px;
 }
 .footer-last .logo{
     position: absolute;
