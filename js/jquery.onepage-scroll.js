@@ -124,6 +124,7 @@
 
         $.fn.moveDown = function() {
             clearAnimation();
+
             var el = $(this)
             index = $(settings.sectionContainer +".active").data("index");
             current = $(settings.sectionContainer + "[data-index='" + index + "']");
@@ -145,7 +146,7 @@
 
             //TODO
             sectionAnimation(next);
-
+            footerContent(next,'#footer_content');
 
             if(settings.pagination == true) {
                 $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
@@ -192,6 +193,8 @@
             next.addClass("active");
             //TODO
             sectionAnimation(next);
+            footerContent(next,'#footer_content');
+
             if(settings.pagination == true) {
                 $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
                 $(".onepage-pagination li a" + "[data-index='" + next.data("index") + "']").addClass("active");
@@ -219,6 +222,7 @@
             next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
             //TODO
             sectionAnimation(next);
+            footerContent(next,'#footer_content');
 
             if(next.length > 0) {
                 if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
