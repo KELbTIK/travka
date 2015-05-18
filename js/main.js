@@ -43,13 +43,20 @@ function sectionAnimation(element){
 
     revealLoop();
 }
-function clearAnimation(){
+function clearAnimation(section){
     if ($('.main.onepage-wrapper').css('display') != "none"){
-        $('.animated:not(.header-menu):not(.icon-add):not(.icon-heart-girl)').each(function(){$(this).removeClass('animated')});
-        $('.reveal:not(.header-menu):not(.footer-control):not(.logo-header), .animation-section').each(function(){
-            $(this).css('visibility', 'hidden');
-            $(this).css('-webkit-animation-name', 'none');
-        })
+        section.find('.content').addClass('fadeOut animated');
+        setTimeout(
+            function() {
+                section.find('.content').removeClass('fadeOut animated');
+                $('.animated:not(.header-menu):not(.icon-add):not(.icon-heart-girl)').each(function(){$(this).removeClass('animated')});
+                section.find('.reveal:not(.header-menu):not(.footer-control):not(.logo-header), .animation-section').each(function(){
+                    $(this).css('visibility', 'hidden');
+                    $(this).css('-webkit-animation-name', 'none');
+                })
+            }, 750
+        );
+
 
         $('.onepage-pagination li a').each(function(){
             $(this).removeClass('fadeInLeftAfter');
