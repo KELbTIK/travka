@@ -1481,3 +1481,6 @@ input[name="enter"]{
 .footer-menu{
     display: none;
 }
+.onepage-wrapper .section {
+    height: 101%;
+}
