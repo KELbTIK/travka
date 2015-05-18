@@ -175,10 +175,10 @@ $(document).ready(function(){
         })
     }, 2000)
 
-    if (localStorage['enterSite'] == "true"){
-        enterSite();
-        $(".main").moveTo(1);
-    }
+    //if (localStorage['enterSite'] == "true"){
+    //    enterSite();
+    //    $(".main").moveTo(1);
+    //}
 
     $('.label-radio').click(function() {
         $('.label-active').each(function(){$(this).removeClass('label-active')})

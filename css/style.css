@@ -366,13 +366,14 @@ body{
     top: 4px;
 }
 
-.footer-last {
+.footer-last, .footer-first {
     background-color: #15535F!important;
 }
 
 .social-bar{
     margin-top: 25px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 .icon-container{
     width: 32px;
@@ -475,7 +476,7 @@ body{
     right: 50px;
     z-index:99999999999;
 }
-.footer-menu .navbar-nav > li > a {
+.footer-first .navbar-nav > li > a {
     padding-top: 30px;
     padding-bottom: 20px;
     padding-left:30px;
@@ -580,13 +581,16 @@ body{
     padding-right:30px;
 }
 
-.footer-control{
+.footer-control, .footer-first{
     height:80px;
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #E7EEEF;
     z-index:9999999999;
+}
+.footer-first{
+    z-index: 9999;
 }
 .footer-control img:not(.logo){
     position:absolute;
@@ -608,12 +612,15 @@ body{
  .links span{
     color:#15535F;
 }
-.footer-control ul li a{
+.footer-control ul li a, .footer-first ul li a{
     font-size:29px;
     font-family: 'AlmoniDLAAA-Bold';
     color:#104C50;
 }
-.footer-control .navbar-right {
+.footer-first ul li a{
+    color: #fff;
+}
+.footer-control .navbar-right, .footer-first .navbar-right {
     margin-right: 15px;
     margin-top: 9px;
 }
