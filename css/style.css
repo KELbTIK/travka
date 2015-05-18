@@ -366,20 +366,9 @@ body{
     top: 4px;
 }
 
-.footer-menu {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-    background-color: #15535F;
-    z-index:999999999;
+.footer-last {
+    background-color: #15535F!important;
 }
-.footer-menu .nav a{
-    font-size:25px;
-    font-family: 'AlmoniDLAAA-Bold';
-    color:#fff!important;
-}
-
 
 .social-bar{
     margin-top: 25px;
@@ -480,7 +469,7 @@ body{
     margin-top: 4px;
     background-position: 0px -405px;
 }
-.footer-menu .logo{
+.footer-last .logo{
     position: absolute;
     bottom: 17px;
     right: 50px;
@@ -599,7 +588,7 @@ body{
     background-color: #E7EEEF;
     z-index:9999999999;
 }
-.footer-control-1 img{
+.footer-control img:not(.logo){
     position:absolute;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -619,74 +608,15 @@ body{
  .links span{
     color:#15535F;
 }
-
-.footer-control-2 ul li a{
+.footer-control ul li a{
     font-size:29px;
     font-family: 'AlmoniDLAAA-Bold';
     color:#104C50;
 }
-
-.footer-control-2 .navbar-right {
-    margin-right: 15px;
-    margin-top: 10px;
-}
-.footer-control-3 ul li a{
-    font-size:29px;
-    font-family: 'AlmoniDLAAA-Bold';
-    color:#104C50;
-}
-.footer-control-3 ul li a img{
-    margin-top: -8px;
-}
-
-.footer-control-3 .navbar-right {
+.footer-control .navbar-right {
     margin-right: 15px;
     margin-top: 9px;
 }
-.footer-control-4 ul li a{
-    font-size:29px;
-    font-family: 'AlmoniDLAAA-Bold';
-    color:#104C50;
-}
-/*.footer-control-4 ul li a img{*/
-    /*margin-top: -8px;*/
-/*}*/
-
-.footer-control-4 .navbar-right {
-    margin-right: 15px;
-    margin-top: 9px;
-}
-.footer-control-5 ul li a{
-    font-size:29px;
-    font-family: 'AlmoniDLAAA-Bold';
-    color:#104C50;
-}
-/*.footer-control-4 ul li a img{*/
-/*margin-top: -8px;*/
-/*}*/
-
-.footer-control-5 .navbar-right {
-    margin-right: 15px;
-    margin-top: 9px;
-}
-.footer-control-6 ul li a{
-    font-size:29px;
-    font-family: 'AlmoniDLAAA-Bold';
-    color:#104C50;
-}
-/*.footer-control-4 ul li a img{*/
-/*margin-top: -8px;*/
-/*}*/
-
-.footer-control-6 .navbar-right {
-    margin-right: 15px;
-    margin-top: 9px;
-}
-
-/*.page10 .content-0{*/
-    /*height:95%;*/
-    /*background: url(../img/back-ground-3.png) no-repeat scroll center center; background-size: cover;*/
-/*}*/
 .page10 .footer-menu .control-up{
     position:absolute;
     transform: translate(-50%, -50%);
@@ -1539,4 +1469,7 @@ input[name="enter"]{
 .hexagon-fix{
     position: relative;
     top: -32px;
+}
+.footer-menu{
+    display: none;
 }

@@ -1,6 +1,7 @@
 /**
  * Created by KELT on 10.05.2015.
  */
+var slider_4, slider_5, slider_6, slider_7, slider_8;
 function sectionAnimation(element){
 
     var reveal_mas = [];
@@ -45,7 +46,7 @@ function sectionAnimation(element){
 function clearAnimation(){
     if ($('.main.onepage-wrapper').css('display') != "none"){
         $('.animated:not(.header-menu):not(.icon-add):not(.icon-heart-girl)').each(function(){$(this).removeClass('animated')});
-        $('.reveal:not(.header-menu), .animation-section').each(function(){
+        $('.reveal:not(.header-menu):not(.footer-control):not(.logo-header), .animation-section').each(function(){
             $(this).css('visibility', 'hidden');
             $(this).css('-webkit-animation-name', 'none');
         })
@@ -53,6 +54,59 @@ function clearAnimation(){
         $('.onepage-pagination li a').each(function(){
             $(this).removeClass('fadeInLeftAfter');
         })
+    }
+}
+function footerContent(section, footer){
+    var footer_cont = $(section).find('.footer-menu');
+    if (footer_cont.length > 0 && $(section).hasClass('page10') == false){
+        $(footer).html(footer_cont.html());
+        $('.trigger-overlay-slider').click(function(){
+            var slider_elem = $('.main').find('section.active .overlay-slider');
+            slider_elem.removeClass('close');
+            slider_elem.addClass('open');
+            var slider;
+            if ($('.main').find('section.active').hasClass('page4')){
+                slider = slider_4;
+            }
+            if ($('.main').find('section.active').hasClass('page5')){
+                slider = slider_5;
+            }
+            if ($('.main').find('section.active').hasClass('page6')){
+                slider = slider_6;
+            }
+            if ($('.main').find('section.active').hasClass('page7')){
+                slider = slider_7;
+            }
+            if ($('.main').find('section.active').hasClass('page8')){
+                slider = slider_8;
+            }
+            slider.reloadSlider();
+            slider.goToSlide(parseInt($(this).attr('href').substring(1))-1);
+            $('.header-menu').css('visibility', 'hidden');
+            $('.logo-header').css('visibility', 'hidden');
+            $('.footer-control').css('visibility', 'hidden');
+            $('.onepage-pagination').hide();
+        })
+        $(footer).parent().removeClass('footer-last');
+        $('.header-menu').css('visibility', 'visible');
+        $('.logo-header').css('visibility', 'visible');
+
+    }else if ($(section).hasClass('page10') == false){
+        $(footer).html('<img class="control-down" src="img/control.png" alt=""/>');
+        $('.control-down').click(function() {
+            $(".main").moveDown();
+        });
+        $(footer).parent().removeClass('footer-last');
+        $('.header-menu').css('visibility', 'visible');
+        $('.logo-header').css('visibility', 'visible');
+    }else{
+        $(footer).html('<img class="control-up" src="img/control-up.png" alt=""/>' + footer_cont.html() + '<img class="logo reveal reveal-8" src="img/footer-header-img.png" alt=""/>');
+        $(footer).parent().addClass('footer-last');
+        $('.header-menu').css('visibility', 'hidden');
+        $('.logo-header').css('visibility', 'hidden');
+        $('.control-up').click(function() {
+            $(".main").moveTo(1);
+        });
     }
 }
 $(document).ready(function(){
@@ -63,41 +117,18 @@ $(document).ready(function(){
         responsiveFallback: 600,
         loop: true
     });
-    var slider_4 = $('#slider-4').bxSlider();
-    var slider_5 = $('#slider-5').bxSlider();
-    var slider_6 = $('#slider-6').bxSlider();
-    var slider_7 = $('#slider-7').bxSlider();
-    var slider_8 = $('#slider-8').bxSlider();
-    $('.trigger-overlay-slider').click(function(){
-        var slider_elem = $(this).parents('section').find('.overlay-slider');
-        slider_elem.removeClass('close');
-        slider_elem.addClass('open');
-        if ($(this).parents('section').hasClass('page4')){
-            slider = slider_4;
-        }
-        if ($(this).parents('section').hasClass('page5')){
-            slider = slider_5;
-        }
-        if ($(this).parents('section').hasClass('page6')){
-            slider = slider_6;
-        }
-        if ($(this).parents('section').hasClass('page7')){
-            slider = slider_7;
-        }
-        if ($(this).parents('section').hasClass('page8')){
-            slider = slider_8;
-        }
-        slider.reloadSlider();
-        slider.goToSlide(parseInt($(this).attr('href').substring(1))-1);
-        $('.header-menu').css('visibility', 'hidden');
-        $('.logo-header').css('visibility', 'hidden');
-        $('.onepage-pagination').hide();
-    })
+    slider_4 = $('#slider-4').bxSlider();
+    slider_5 = $('#slider-5').bxSlider();
+    slider_6 = $('#slider-6').bxSlider();
+    slider_7 = $('#slider-7').bxSlider();
+    slider_8 = $('#slider-8').bxSlider();
+
     $('.overlay-close').click(function(){
         if ($(this).hasClass('close-main')){
         }else{
             $('.header-menu').css('visibility', 'visible');
             $('.logo-header').css('visibility', 'visible');
+            $('.footer-control').css('visibility', 'visible');
             $('.onepage-pagination').show();
         }
         $(this).parent().removeClass('open');
@@ -117,6 +148,10 @@ $(document).ready(function(){
         setTimeout(function(){
             $('.onepage-pagination').addClass('fadeIn animated display-on');
         }, 3000)
+        setTimeout(function(){
+            $('.footer-control').removeAttr('style');
+            $('.footer-control').addClass('animated');
+        }, 2000)
         setTimeout(function(){
             $('.onepage-pagination li:first-child a').addClass('fadeInLeftAfter');
         }, 3500)
@@ -144,12 +179,6 @@ $(document).ready(function(){
         enterSite();
         $(".main").moveTo(1);
     }
-    $('.control-up').click(function() {
-        $(".main").moveTo(1);
-    });
-    $('.control-down').click(function() {
-        $(".main").moveDown();
-    });
 
     $('.label-radio').click(function() {
         $('.label-active').each(function(){$(this).removeClass('label-active')})
