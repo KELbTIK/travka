@@ -1486,3 +1486,8 @@ input[name="enter"]{
  .navbar-right{
      opacity:0;
 }
+
+.footer-animation{
+    opacity:1!;
+    transition:2s all;
+}
