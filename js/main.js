@@ -216,7 +216,7 @@ $(window).load(function(){
         })
     }, 2000)
 
-    if (localStorage['enterSite'] == "true"){
+    if (localStorage['enterSite'] == "false"){
         enterSite();
         $(".main").moveTo(1);
     }
