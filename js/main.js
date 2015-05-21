@@ -5,14 +5,17 @@ var slider_4, slider_5, slider_6, slider_7, slider_8;
 function sectionAnimation(element){
 
     var reveal_mas = [];
-    var count_anim = 15;
+    var count_anim = 20;
     for (var i = 0; i < count_anim; i++){
         reveal_mas[i] = $(element).find('.reveal-' + i);
+
     }
     function revealAnimaton(i, elem, interval) {
         setTimeout(function(){
-            elem.removeAttr('style');
-            elem.addClass('animated');
+            if (elem.length > 0){
+                elem.removeAttr('style');
+                elem.addClass('animated');
+            }
         }, i* interval)
     }
 
@@ -49,12 +52,12 @@ function clearAnimation(section){
         setTimeout(
             function() {
                 section.find('.content').removeClass('fadeOut animated');
-                $('.animated:not(.header-menu):not(.icon-add):not(.icon-heart-girl):not(.logo-header)').each(function(){$(this).removeClass('animated')});
-                section.find('.reveal:not(.header-menu):not(.footer-control):not(.logo-header), .animation-section').each(function(){
+                $('.animated:not(.header-menu):not(.icon-add):not(.icon-heart-girl):not(.logo-header):not(.logo):not(.back):not(.back-ground-2):not(.back-ground-shine)').each(function(){$(this).removeClass('animated')});
+                section.find('.reveal:not(.header-menu):not(.footer-control):not(.logo-header):not(.back):not(.back-ground-2):not(.back-ground-shine), .animation-section').each(function(){
                     $(this).css('visibility', 'hidden');
                     $(this).css('-webkit-animation-name', 'none');
                 })
-            }, 750
+            }, 500
         );
 
 
@@ -66,34 +69,42 @@ function clearAnimation(section){
 function footerContent(section, footer){
     var footer_cont = $(section).find('.footer-menu');
     if (footer_cont.length > 0 && $(section).hasClass('page10') == false){
-        $(footer).html(footer_cont.html());
-        $('.trigger-overlay-slider').click(function(){
-            var slider_elem = $('.main').find('section.active .overlay-slider');
-            slider_elem.removeClass('close');
-            slider_elem.addClass('open');
-            var slider;
-            if ($('.main').find('section.active').hasClass('page4')){
-                slider = slider_4;
-            }
-            if ($('.main').find('section.active').hasClass('page5')){
-                slider = slider_5;
-            }
-            if ($('.main').find('section.active').hasClass('page6')){
-                slider = slider_6;
-            }
-            if ($('.main').find('section.active').hasClass('page7')){
-                slider = slider_7;
-            }
-            if ($('.main').find('section.active').hasClass('page8')){
-                slider = slider_8;
-            }
-            slider.reloadSlider();
-            slider.goToSlide(parseInt($(this).attr('href').substring(1))-1);
-            $('.header-menu').css('visibility', 'hidden');
-            $('.logo-header').css('visibility', 'hidden');
-            $('.footer-control').css('visibility', 'hidden');
-            $('.onepage-pagination').hide();
-        })
+        $(footer).css('opacity', 0);
+        $(footer).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function() {
+            $(footer).html(footer_cont.html());
+            $(footer).css('opacity', 1);
+            $('.trigger-overlay-slider').click(function(){
+                var slider_elem = $('.main').find('section.active .overlay-slider');
+
+                var slider;
+                if ($('.main').find('section.active').hasClass('page4')){
+                    slider = slider_4;
+                }
+                if ($('.main').find('section.active').hasClass('page5')){
+                    slider = slider_5;
+                }
+                if ($('.main').find('section.active').hasClass('page6')){
+                    slider = slider_6;
+                }
+                if ($('.main').find('section.active').hasClass('page7')){
+                    slider = slider_7;
+                }
+                if ($('.main').find('section.active').hasClass('page8')){
+                    slider = slider_8;
+                }
+                slider.reloadSlider();
+                slider.goToSlide(parseInt($(this).attr('href').substring(1))-1);
+                $('.header-menu').css('visibility', 'hidden');
+                $('.logo-header').css('visibility', 'hidden');
+                $('.footer-control').css('visibility', 'hidden');
+                $('.onepage-pagination').hide();
+                setTimeout(function(){
+                    slider_elem.removeClass('close');
+                    slider_elem.addClass('open');
+                }, 500)
+
+            })
+        });
         $(footer).parent().removeClass('footer-last');
         $('.header-menu').removeClass('fadeOutUp');
         $('.header-menu').addClass('fadeInDown');
@@ -101,9 +112,13 @@ function footerContent(section, footer){
         $('.logo-header').addClass('zoomIn');
 
     }else if ($(section).hasClass('page10') == false){
-        $(footer).html('<img class="control-down" src="img/control.png" alt=""/>');
-        $('.control-down').click(function() {
-            $(".main").moveDown();
+        $(footer).css('opacity', 0);
+        $(footer).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function() {
+            $(footer).html('<img class="control-down" src="img/control.png" alt=""/>');
+            $(footer).css('opacity', 1);
+            $('.control-down').click(function() {
+                $(".main").moveDown();
+            });
         });
         $(footer).parent().removeClass('footer-last');
         $('.header-menu').removeClass('fadeOutUp');
@@ -112,22 +127,29 @@ function footerContent(section, footer){
         $('.logo-header').addClass('zoomIn');
 
     }else{
-        $(footer).html('' +
-            '<img class="control-up" src="img/control-up.png" alt=""/>' +
-            footer_cont.html() +
-            '<img class="logo reveal reveal-8 zoomIn animated" src="img/footer-header-img.png" alt=""/>'
-        );
+        $(footer).css('opacity', 0);
+        $(footer).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function() {
+            $(footer).css('opacity', 1);
+            $(footer).html('' +
+                '<img class="control-up" src="img/control-up.png" alt=""/>' +
+                footer_cont.html() +
+                '<img class="logo" src="img/footer-header-img.png" alt=""/>'
+            );
+
+            $('.control-up').click(function() {
+                $(".main").moveTo(1);
+            });
+        });
+
         $(footer).parent().addClass('footer-last');
         $('.header-menu').removeClass('fadeInDown');
         $('.header-menu').addClass('fadeOutUp');
         $('.logo-header').removeClass('zoomIn');
         $('.logo-header').addClass('zoomOut');
-        $('.control-up').click(function() {
-            $(".main").moveTo(1);
-        });
+
     }
 }
-$(document).ready(function(){
+$(window).load(function(){
     $('.onepage-pagination').addClass('animation-section');
 
     $(".main").onepage_scroll({
@@ -156,6 +178,7 @@ $(document).ready(function(){
 
     sectionAnimation('.page1');
     function enterSite(){
+        $('.background').show();
         setTimeout(function(){
             $('.logo-header, .header-menu').removeAttr('style');
             $('.logo-header').css('visibility', 'visible');

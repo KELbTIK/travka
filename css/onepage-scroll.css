@@ -21,13 +21,14 @@ body, .onepage-wrapper, html {
     position: relative;
     padding: 0;
     -webkit-transform-style: preserve-3d;
+
 }
 
 .onepage-wrapper .section {
     width: 100%;
     height: 101%;
     overflow:hidden;
-    background-color: #0A3A44 ;
+    /*background-color: #0A3A44 ;*/
 }
 
 .onepage-pagination {
