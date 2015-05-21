@@ -5,14 +5,17 @@ var slider_4, slider_5, slider_6, slider_7, slider_8;
 function sectionAnimation(element){
 
     var reveal_mas = [];
-    var count_anim = 15;
+    var count_anim = 20;
     for (var i = 0; i < count_anim; i++){
         reveal_mas[i] = $(element).find('.reveal-' + i);
+
     }
     function revealAnimaton(i, elem, interval) {
         setTimeout(function(){
-            elem.removeAttr('style');
-            elem.addClass('animated');
+            if (elem.length > 0){
+                elem.removeAttr('style');
+                elem.addClass('animated');
+            }
         }, i* interval)
     }
 
@@ -49,12 +52,12 @@ function clearAnimation(section){
         setTimeout(
             function() {
                 section.find('.content').removeClass('fadeOut animated');
-                $('.animated:not(.header-menu):not(.icon-add):not(.icon-heart-girl):not(.logo-header):not(.logo)').each(function(){$(this).removeClass('animated')});
-                section.find('.reveal:not(.header-menu):not(.footer-control):not(.logo-header), .animation-section').each(function(){
+                $('.animated:not(.header-menu):not(.icon-add):not(.icon-heart-girl):not(.logo-header):not(.logo):not(.back):not(.back-ground-2):not(.back-ground-shine)').each(function(){$(this).removeClass('animated')});
+                section.find('.reveal:not(.header-menu):not(.footer-control):not(.logo-header):not(.back):not(.back-ground-2):not(.back-ground-shine), .animation-section').each(function(){
                     $(this).css('visibility', 'hidden');
                     $(this).css('-webkit-animation-name', 'none');
                 })
-            }, 750
+            }, 500
         );
 
 
@@ -146,7 +149,7 @@ function footerContent(section, footer){
 
     }
 }
-$(document).ready(function(){
+$(window).load(function(){
     $('.onepage-pagination').addClass('animation-section');
 
     $(".main").onepage_scroll({
@@ -175,6 +178,7 @@ $(document).ready(function(){
 
     sectionAnimation('.page1');
     function enterSite(){
+        $('.background').show();
         setTimeout(function(){
             $('.logo-header, .header-menu').removeAttr('style');
             $('.logo-header').css('visibility', 'visible');
