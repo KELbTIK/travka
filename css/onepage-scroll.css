@@ -21,7 +21,9 @@ body, .onepage-wrapper, html {
     position: relative;
     padding: 0;
     -webkit-transform-style: preserve-3d;
-
+}
+body > .onepage-wrapper{
+    background: #0A3A44;
 }
 
 .onepage-wrapper .section {

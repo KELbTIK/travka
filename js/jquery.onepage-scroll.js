@@ -146,6 +146,9 @@
 
             //TODO
             clearAnimation(current);
+            if (next.hasClass('page3')){
+                sectionAnimation('#main-bg');
+            }
             sectionAnimation(next);
             footerContent(next,'#footer_content');
 
@@ -193,7 +196,12 @@
             next.addClass("active");
             //TODO
             clearAnimation(current);
+            if (next.hasClass('page3')){
+                sectionAnimation('#main-bg');
+            }
+
             sectionAnimation(next);
+
             footerContent(next,'#footer_content');
 
             if(settings.pagination == true) {
@@ -222,6 +230,9 @@
             next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
             //TODO
             clearAnimation(current);
+            if (next.hasClass('page3')){
+                sectionAnimation('#main-bg');
+            }
             sectionAnimation(next);
             footerContent(next,'#footer_content');
 

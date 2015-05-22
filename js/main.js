@@ -49,6 +49,11 @@ function sectionAnimation(element){
 function clearAnimation(section){
     if ($('.main.onepage-wrapper').css('display') != "none"){
         section.find('.content').addClass('fadeOut animated');
+        if (section.hasClass('page3')){
+            $('.cabinet').removeClass('fadeInLeft').addClass('fadeOutLeft animated');
+            $('.sofa').removeClass('fadeInLeft').addClass('fadeOutRight   animated');
+            $('.back-ground-floor').removeClass('fadeInUp').addClass('fadeOutDown   animated');
+        }
         setTimeout(
             function() {
                 section.find('.content').removeClass('fadeOut animated');
@@ -57,6 +62,12 @@ function clearAnimation(section){
                     $(this).css('visibility', 'hidden');
                     $(this).css('-webkit-animation-name', 'none');
                 })
+                if (section.hasClass('page3')){
+                    $('.cabinet').removeClass('fadeOutLeft animated').addClass('fadeInLeft').css('visibility', 'hidden').css('-webkit-animation-name', 'none');
+                    $('.sofa').removeClass('fadeOutRight animated').addClass('fadeInLeft').css('visibility', 'hidden').css('-webkit-animation-name', 'none');;
+                    $('.back-ground-floor').removeClass('fadeOutDown   animated').addClass('fadeInUp').css('visibility', 'hidden').css('-webkit-animation-name', 'none');;
+                }
+
             }, 500
         );
 
@@ -219,6 +230,7 @@ $(window).load(function(){
     if (localStorage['enterSite'] == "true"){
         enterSite();
         $(".main").moveTo(1);
+        sectionAnimation('#main-bg');
     }
 
     $('.label-radio').click(function() {
