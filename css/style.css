@@ -125,11 +125,11 @@ body{
     position: absolute;
     background: url(../img/wheel.png) no-repeat center;
     animation-name: rotate;
-    animation-duration: 135s;
+    animation-duration: 200s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     -webkit-animation-name: rotate;
-    -webkit-animation-duration: 135s;
+    -webkit-animation-duration: 200s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 }
