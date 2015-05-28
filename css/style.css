@@ -382,6 +382,7 @@ body{
     margin-top: 25px;
     margin-left: 15px;
     margin-right: 15px;
+    float: left;
 }
 .icon-container{
     width: 32px;
@@ -565,6 +566,17 @@ body{
     height: 80px;
     background-color: #15535F;
     z-index:99999999999;
+    border: none;
+    border-radius: 0;
+}
+.navbar-toggle{
+    float: left;
+    margin-left: 15px;
+    margin-right: auto;
+}
+.navbar-collapse{
+    background: #15535F;
+    border: none;
 }
 .header-menu .nav a{
     font-size:25px;
@@ -633,7 +645,7 @@ body{
 }
 .footer-control .navbar-right, .footer-first .navbar-right {
     margin-right: 15px;
-    margin-top: 9px;
+    /*margin-top: 9px;*/
 }
 .page10 .footer-menu .control-up{
     position:absolute;
@@ -1506,4 +1518,546 @@ input[name="enter"]{
 #footer_content{
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+}
+.navbar-fixed-bottom{
+    width: 60%;
+    right: 0;
+    left: auto;
+    top: 0;
+    background-color: #E7EEEF;
+    border: none;
+}
+.navbar-fixed-bottom .collapse{
+    background-color: #E7EEEF;
+    border: none;
+}
+.navbar-fixed-bottom.navbar-default .navbar-nav > li > a{
+    color: #104C50;
+}
+.navbar-fixed-bottom.navbar-default .navbar-toggle{
+    border-color: #104C50;
+    float: right;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.navbar-fixed-bottom.navbar-default .navbar-toggle .icon-bar{
+    background-color: #104C50;
+}
+.navbar-nav > li > a{
+    padding-top: 27px;
+    padding-bottom: 28px;
+}
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{
+    max-height: 400px;
+}
+.footer-first .navbar-fixed-bottom{
+    left: 0;
+    right: auto;
+    background-color: #15535F;
+}
+.footer-first .navbar-fixed-bottom .collapse{
+    background-color: #15535F;
+}
+.footer-first .navbar-fixed-bottom.navbar-default .navbar-nav > li > a{
+    color: #fff;
+}
+.footer-first .navbar-fixed-bottom.navbar-default .navbar-toggle{
+    border-color: #fff;
+}
+.footer-first .navbar-fixed-bottom.navbar-default .navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+.footer-first .navbar-nav{
+    background-color: #15535F;
+}
+@media (max-width: 767px){
+    .cabin {
+        width: 131px;
+        height: 221px;
+        top: calc(50% - 110px);
+        left: calc(50% - 67px);
+        background-size: 421px auto;
+    }
+    .sofa{
+        width: 300px;
+        height: auto;
+    }
+    .cabinet{
+        width: 270px;
+        height: auto;
+        left: -190px;
+    }
+    .growslove{
+        top: 50%;
+    }
+    .trees{
+        top: calc(50% - 52px);
+        left: calc(50% - 40px);
+        width: 85px;
+    }
+    .girl{
+        width: 350px;
+        left: 72px;
+        top: -80px;
+    }
+    .shovel{
+        left: 47px;
+        width: 100px;
+        top: -68px;
+    }
+    .back-ground-floor{
+        height: 230px;
+    }
+    .icon-container-sup{
+        width: 40px;
+        height: 53px;
+        left: calc(50% - 20px);
+    }
+    .icon-container-sup i{
+        background-size: 100%;
+    }
+    .icon-heart-girl{
+        background-position: 0px -104px!important;
+    }
+    .icon-heart-girl:hover{
+        background-position: 0 -52px!important;
+    }
+    .growslove .heart{
+        left: calc(50% - 20px);
+    }
+    .footer-control, .footer-first{
+        height: 50px;
+    }
+    .links{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .footer-control img:not(.logo){
+        top: 30px;
+    }
+    .header-menu{
+        height: 50px;
+    }
+    .header-menu>img{
+        top: 10px;
+        right: 5px;
+        width: 55px;
+    }
+    .social-bar{
+        margin-top: 9px;
+    }
+    .onepage-pagination{
+        right: 0;
+    }
+    .onepage-pagination li{
+        padding-top: 10px;
+    }
+    .onepage-pagination li a:before, .onepage-pagination li a.active:before, .onepage-pagination li a{
+        height: 10px;
+        width: 10px;
+    }
+    .onepage-pagination li a:after{
+        height: 22px;
+        width: 70px;
+        right: 106px;
+        background-size: 100%;
+        top: -7px;
+        font-size: 14px;
+        padding-top: 2px!important;
+    }
+    .fadeInLeftAfter:after{
+        right: 80px!important;
+    }
+    .onepage-wrapper .section{
+        height: 100%;
+    }
+    .growslove h1{
+        top: -228px!important;
+    }
+    .nav > li{
+        border-top: 1px solid #fff;
+    }
+    .header-menu .navbar-nav > li > a{
+        padding: 10px;
+    }
+    .navbar-nav{
+        margin: 0 -15px;
+    }
+    .navbar-default .navbar-toggle{
+        border-radius: 0;
+    }
+    .navbar-default .navbar-toggle .icon-bar{
+        background-color: #fff;
+    }
+    .viewing-page-1 .popover-title{
+        padding: 5px;
+    }
+    .popover-title{
+        font-size: 18px;
+    }
+    .popover-content{
+        padding: 5px;
+    }
+    .content-plant>h1, .growslove h1, .set-up h1, .page10 h1{
+        font-size: 30px;
+    }
+    .content-plant>p{
+        left: 0;
+        width: 100%;
+        top: 65%;
+        font-size: 16px;
+    }
+    .seeds{
+        top: 30%;
+        background-size: 800px auto;
+        background-position: calc(50% - 279px) 0;
+    }
+    .navbar-fixed-bottom{
+        top: auto;
+    }
+    .navbar-fixed-bottom .navbar-collapse{
+        background-color: #E7EEEF;
+    }
+    .navbar-fixed-bottom.navbar-default .navbar-nav > li > a{
+        font-size: 16px;
+    }
+    .navbar-fixed-bottom .icon-container-menu{
+        display: none;
+    }
+    .navbar-fixed-bottom .navbar-nav > li > a{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .footer-control .navbar-right, .footer-first .navbar-right {
+        margin-right: 0;
+    }
+    .navbar-fixed-bottom .nav > li:first-child{
+        border: none;
+    }
+    .sports{
+        top: 23%;
+    }
+    .hex{
+        display: none;
+    }
+    .plant{
+        top: 24%;
+        width: 200px;
+        left: calc(50% - 120px);
+    }
+    .bush{
+        top: 23%;
+        width: 220px;
+        left: calc(50% - 117px);
+    }
+    .set-up .cabin-sup{
+        width: 131px;
+        height: 221px;
+        top: calc(50% - 110px);
+        left: calc(50% - 67px);
+        background-size: 421px auto;
+    }
+    .set-up .trees-sup{
+        top: calc(50% - 52px);
+        left: calc(50% - 40px);
+        width: 85px;
+    }
+    .icon-add:hover{
+        background-position: 0px -52px!important;
+    }
+    .open-sup-1{
+        top: -64px;
+        right: 44px;
+        left: auto!important;
+    }
+    .open-sup-2{
+        top: -10px;
+        right: 44px;
+        left: auto!important;
+    }
+    .open-sup-3 {
+        top: 86px;
+        right: 44px;
+        left: auto!Important;
+    }
+    .open-sup-4 {
+        top: 107px;
+        right: -20px;
+        left: auto!important;
+    }
+    .open-sup-5 {
+        top: 64px;
+        right: -73px;
+        left: auto!important;
+    }
+    .open-sup-6 {
+        top: -16px;
+        right: -73px;
+        left: auto!important;
+    }
+    .open-sup-7 {
+        top: -68px;
+        right: -73px;
+        left: auto!important;
+    }
+    .footer-control .logo, .page1 .logo{
+        width: 55px;
+        right: 5px;
+        bottom: 10px;
+    }
+    .girl-end{
+        top: 355px;
+        left: -75px;
+        width: 200px;
+    }
+    .hexagon{
+        width: 70px;
+        background: none;
+
+    }
+    .hexagon-fix{
+        width: 70px;
+    }
+    .hexagon:before,.hexagon:after{
+        content: none;
+    }
+    .hexagon-1{
+        left: 40px;
+    }
+    .icon-store{
+        background-position: 0px -210px;
+        width: 50px!important;
+        height: 35px!important;
+    }
+    .hexagon-group-3 .hexagon-1 .hex-1{
+        top: -19px;
+        left: 9px;
+    }
+    .hexagon-group-3 .hexagon-1 p{
+        top: -1px;
+    }
+    .hexagon-2 .hex-2{
+        top: -20px;
+        left: 18px;
+    }
+    .icon-magazine {
+        background-position: 3px -219px;
+        width: 45px!important;
+        height: 38px!important;
+    }
+    .hexagon-group-3 .hexagon-2 p{
+        right: 6px;
+        top: 1px;
+    }
+    .hexagon-3 {
+        left: 1px;
+        top: -56px;
+    }
+    .hexagon-3 .hex-3 {
+        top: -22px;
+        left: 17px;
+    }
+    .icon-facebook {
+        background-position: 0px -284px;
+        width: 50px!important;
+        height: 41px!important;
+    }
+    .hexagon-group-3 .hexagon-3 p {
+        right: 14px;
+        bottom: 6px;
+    }
+    .hexagon-4 {
+        left: 80px;
+        top: -118px;
+    }
+    .hexagon-4 .hex-4 {
+        top: -24px;
+        left: 13px;
+    }
+    .icon-association {
+        background-position: 1px -361px;
+        width: 55px!important;
+        height: 39px!important;
+        margin-left: -8px;
+    }
+    .hexagon-group-3 .hexagon-4 p {
+        right: 4px;
+        top: 1px;
+    }
+    .hexagon-5 {
+        left: 160px;
+        top: -180px;
+    }
+    .icon-user {
+        background-position: 1px -404px;
+        width: 55px!important;
+        height: 38px!important;
+    }
+    .hexagon-5 .hex-5 {
+        position: absolute;
+        top: -23px;
+        left: 13px;
+    }
+    .hexagon-group-3 .hexagon-5 p {
+        right: 13px;
+        top: 1px;
+    }
+    .hexagon p{
+        font-size: 14px;
+    }
+    .page10 .content>p{
+        top: 57%;
+        font-size: 24px;
+    }
+    .overlay .overlay-close{
+        width: 30px;
+        height: 30px;
+    }
+    .bx-wrapper{
+        max-width: 95%!important;
+    }
+    .overlay nav{
+        top: 40%;
+    }
+    .bxslider p{
+        font-size: 14px;
+    }
+    .bxslider h2{
+        font-size: 18px;
+    }
+    .bx-wrapper .bx-pager{
+        bottom: -28%;
+    }
+    .bx-wrapper .bx-pager.bx-default-pager a{
+        width: 10px;
+        height: 10px;
+    }
+    .bx-wrapper .bx-next{
+        right: 0;
+    }
+    .bx-wrapper .bx-prev{
+        left: 0;
+        background-position: 0px -52px;
+    }
+    .bx-wrapper .bx-controls-direction a{
+        width: 25px;
+        height: 53px;
+        background-size: 100%;
+    }
+    .bx-wrapper .bx-prev:hover{
+        background-position: 0px -104px;
+    }
+    .bx-wrapper .bx-next:hover{
+        background-position: 0px -157px;
+    }
+    .page1 h1{
+        width: 140%;
+        left: -20%;
+        font-size: 30px;
+        top: -80px;
+    }
+    .hexagon-group-1-under {
+        bottom: 175px;
+        width: 320px;
+        padding: 0 15px;
+        left: -20%;
+        top: 135px;
+    }
+    .hexagon-group-1-under>p{
+        width: 100%;
+        left: 0;
+        padding: 0 15px;
+    }
+
+    .hexagon-1 .hex-1 {
+        position: absolute;
+        top: -28px;
+        left: 12px;
+    }
+    .icon-shield {
+        width: 55px!important;
+        height: 44px!important;
+        background-position: 1px 0px;
+    }
+    .hexagon-1 .hex-1 {
+        position: absolute;
+        top: -18px;
+        left: 18px;
+    }
+    .hexagon-1 .hex-1 p{
+        top: -3px;
+        left: -9px;
+    }
+    .hexagon-2 .hex-2 {
+        top: -19px;
+        left: 19px;
+    }
+    .icon-st1 {
+        background-position: 1px -38px;
+        width: 45px!important;
+        height: 37px!important;
+    }
+    .hexagon-2 .hex-2 p{
+        left: -7px;
+        top: 3px;
+    }
+
+    .icon-plate {
+        background-position: 2px -76px;
+        width: 45px!important;
+        height: 38px!important;
+    }
+    .hex-3 p {
+        margin-top: 3px;
+        margin-left: 12px;
+    }
+    .icon-spoon {
+        background-position: 4px -111px;
+        width: 45px!important;
+        height: 40px!important;
+    }
+    .hex-4 p {
+        right: 1px;
+        top: 3px;
+    }
+    .icon-100 {
+        background-position: 3px -151px;
+        width: 45px!important;
+        height: 35px!important;
+    }
+    .hex-5 p {
+        top: 7px;
+        right: 10px;
+    }
+    body{
+        min-height: 560px;
+    }
+    .footer-first .navbar-fixed-bottom{
+        left: 0;
+        right: auto;
+    }
+    .footer-first .navbar-fixed-bottom.navbar-default .navbar-toggle{
+        float: left;
+    }
+    .label-radio{
+        font-size: 16px;
+        background-size: 15px;
+        background-position: 91% 3px;
+    }
+    .radio-group{
+        top: -40px;
+        left: -40%;
+    }
+    .label-active {
+        background-position: 91% -45px!important;
+    }
+    .page1 #slider-1 h1 {
+        width: 230%;
+        left: 40%;
+        font-size: 20px;
+        top: -150px;
+    }
+    .page1 #slider-1 .hexagon-group-2{
+        top: 65%;
+    }
 }
