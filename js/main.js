@@ -259,8 +259,12 @@ $(window).load(function(){
         $('#slider-1').removeClass('close');
         $('#slider-1').addClass('open');
     })
+
+    if (window.innerWidth <= 767){
+        $('.icon-container-sup:not(.icon-container-sup-bottom)').each(function(){$(this).data('placement', 'top')})
+        $('.icon-container-sup-bottom').each(function(){$(this).data('placement', 'bottom')})
+    }
     $(function () {
         $('[data-toggle="popover"]').popover()
     })
-
 });

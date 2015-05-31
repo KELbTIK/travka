@@ -39,7 +39,7 @@ body > .onepage-wrapper{
     position: absolute;
     right: 10px;
     top: 44%;
-    z-index: 5;
+    z-index: 999;
     list-style: none;
     margin: 0;
     padding: 0;
